@@ -42,4 +42,62 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-    
+ button {  
+padding: 10px  20px;
+font-size: 16px;
+background-color: hsl(150, 89%, 48%);
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.1s,background-color 0.3s;
+ }
+
+button :active {
+    transform: scale(0.9s);
+    background-color: #3918cc;
+}
+#mensaje  {
+    display: none;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: all 0.5s  ease;
+    font-weight: bold ;
+    color: hsl(189, 18%, 8%);
+    margin-top: 10px;
+}
+button {  
+padding: 10px  20px;
+font-size: 16px;
+background-color: hsla(186, 95%, 51%, 0.779);
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.1s,background-color 0.3s;
+ }
+
+button :active {
+    transform: scale(0.9s);
+    background-color: #3918cc;
+}
+#mensaje2  {
+    display: none;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: all 0.5s  ease;
+    font-weight: bold ;
+    color: hsl(144, 29%, 3%);
+    margin-top: 10px;
+}
+button { transition: all 0.3s ease; }
+button:hover {
+  background-color: hsl(329, 90%, 54%);
+  transform: scale(1.1); /* Agranda el botón */
+  box-shadow: 5px 5px 10px rgba(239, 246, 25, 0.789); /* Añade sombra */
+}
+button:active {
+  transform: translateY(2px); /* Mueve el botón hacia abajo */
+}
+
+

@@ -17,7 +17,10 @@
     </nav>
 
     <section id="sobre-mi">
-      <h2>Sobre mí</h2>
+      <h2>sobre mi </h2>
+      <p id="mensaje2" style="display: none;"></p>
+      <button onclick="mostrarnota()">nota sobre mi </button>
+      <br><br>
       <img
         src="img/ACT2_Tarjeta_Digital_Ruby_601.png"
         alt="Foto personal"
@@ -27,7 +30,7 @@
 
       <h2>Hola, mi nombre es Jessica Ruby.</h2>
 
-      <h2>Soy estudiante en el CECYCTEO-35.</h2>
+      <h2>Soy estudiante del CECyTE-35.</h2>
 
       <h2>Me gusta las matematicas y aprender sobre la historia.</h2>
 
@@ -36,6 +39,9 @@
 
     <section id="pec">
       <h2>Proyecto Escolar Comunitario</h2>
+      <p id="mensaje" style="display: none;"></p>
+      <button onclick="mostrarMensaje()">mostrarMensaje</button>
+      
 
       <h3>Huellas: cuidado animal y salud comunitaria</h3>
       <img src="img/Actividad_4_banner_diseño_digital_ruby_601 (2).png "alt ="perro del proyecto Huellas "widht="400px" height="200px">
@@ -55,9 +61,125 @@
         animal y la salud comunitaria.
       </p>
     </section>
+    
+<!-- HTML -->
+<a href="https://wa.me/+52 1 951 343 5031"  class="whatsapp-button" target="_blank">
+    <img src="img/icono-whatsapp.png.avif" alt="WhatsApp">
+</a>
 
-    <footer>
+<!-- CSS -->
+<style>
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.whatsapp-button img {
+    width: 60px; /* Tamaño del icono */
+    height: 60px;
+}
+</style>
+
+  
+
+
+
+
+ <section id="Preguntas frecuentes">
+      <h2>Preguntas frecuentes  </h2>
+      <p id="mensaje3" style="display: none;"></p>
+      <button onclick="mostrarnota()">nota sobre mi </button>
+      <br><br>
+      
+
+      <h2>Hola, estas son preguntas frecuentes.</h2>
+<!-- HTML -->
+<label class="switch">
+  <input type="checkbox" id="dark-mode-toggle">
+  <span class="slider"></span>
+</label>
+
+<button onclick="toggleInfo()">Mostrar/Ocultar</button>
+<div id="miInfo" style="display:none;">
+    tu tienes mascotas?...
+</div>
+
+<script>
+function toggleInfo() {
+    var x = document.getElementById("miInfo");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+
+
+
+</script>
+
+<details>
+  <summary>¿Que es el cuidado responsable de una mascota?</summary>
+  <p>El cuidado responsable de una mascota significa asumir el compromiso de atender todas sus necesidades físicas, emocionales y de salud durante toda su vida. No se trata solo de tener un animal en casa, sino de garantizar su bienestar diario.</p>
+</details>
+
+<details>
+  <summary>¿Que es la sobrepoblacion de perros?</summary>
+  <p>La sobrepoblación de perros ocurre cuando hay más perros de los que una comunidad puede cuidar adecuadamente. Esto suele pasar cuando los animales se reproducen sin control y no hay suficientes hogares, recursos o servicios para atenderlos.</p>
+</details>
+
+
+
+
+
+
+    </section>
+    <section id="miFormulario">
+      <h2>mi Formulario </h2>
+      <p id="mensaje4" style="display: none;"></p>
+      <button onclick="mostrarnota()">nota sobre mi </button>
+      <br><br>
+
+  <h2>Datos personales</h2>
+
+  <label>Nombre:</label>
+  <input type="text" name="nombre" required minlength="3">
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <hr>
+
+  <h2>Nueva sección: Dirección</h2>
+
+  <label>Calle:</label>
+  <input type="text" name="calle" required>
+
+  <label>Código Postal:</label>
+  <input type="text" name="cp" pattern="[0-9]{5}" placeholder="Ej: 12345" required>
+
+  <label>País:</label>
+  <select name="pais" required>
+    <option value="">Selecciona</option>
+    <option value="mx">México</option>
+    <option value="es">España</option>
+  </select>
+
+  <br><br>
+  <button type="submit">Enviar</button>
+    </section>
+
+       <footer>
       <p>2026 - JESSICA RUBY</p>
     </footer>
+   <script src="Script.js"></script>
   </body>
 </html>
+
+
+
+
+

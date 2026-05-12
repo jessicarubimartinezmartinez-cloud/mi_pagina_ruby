@@ -1,57 +1,114 @@
-// }
-
-
+// ===== MENSAJE PROYECTO =====
 
 function mostrarMensaje() {
     let mensaje = document.getElementById("mensaje");
 
-    mensaje.innerHTML  = "cuida y protege a los animales ";
+    mensaje.innerHTML = "Cuida y protege a los animales";
     mensaje.style.display = "block";
-    
-    setTimeout (() =>  {
-    mensaje.style.opacity ="1";
-    mensaje.style.transform= "translateY(0)";
+
+    setTimeout(() => {
+        mensaje.style.opacity = "1";
+        mensaje.style.transform = "translateY(0)";
     }, 50);
 }
-function mostrarnota() {
-    let mensaje = document.getElementById("mensaje2");
-
-    mensaje.innerHTML  = "hola, mi nombre es ruby mi color favorito es el rosa  ";
-    mensaje.style.display = "block";
-    
-    setTimeout (() =>  {
-    mensaje.style.opacity ="1";
-    mensaje.style.transform= "translateY(0)";
-    }, 50);
-}
-
-
-
 
 function mostrarnota() {
-    let mensaje = document.getElementById("mensaje4");
+    const mensaje = document.getElementById("mensaje2");
 
-    mensaje.innerHTML  = "responde este formulario obligatoriamente ";
+    mensaje.textContent = "Hola, mi nombre es Ruby y mi color favorito es el rosa";
     mensaje.style.display = "block";
-    
-    setTimeout (() =>  {
-    mensaje.style.opacity ="1";
-    mensaje.style.transform= "translateY(0)";
+    mensaje.style.opacity = "1";
+    mensaje.style.transform = "translateY(0)";
+}
+
+
+
+
+// ===== SOBRE MI =====
+function mostrarSobreMi() {
+    const mensaje = document.getElementById("mensaje2");
+
+    mensaje.innerHTML = "me gusta el color rosa";
+    mensaje.style.display = "block";
+
+    setTimeout(() => {
+        mensaje.style.opacity = "1";
+        mensaje.style.transform = "translateY(0)";
     }, 50);
 }
+
+// ===== PREGUNTAS FRECUENTES =====
+function mostrarPreguntas() {
+    const mensaje = document.getElementById("mensaje3");
+
+    mensaje.innerHTML = "cuida bien a tus mascotas";
+    mensaje.style.display = "block";
+
+    setTimeout(() => {
+        mensaje.style.opacity = "1";
+        mensaje.style.transform = "translateY(0)";
+    }, 50);
+}
+
+
+
+
+// ===== MOSTRAR / OCULTAR =====
+
+function toggleInfo() {
+    let x = document.getElementById("miInfo");
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+// ===== MODO OSCURO Y CLARO =====
+
+const modo = document.getElementById("modo");
+const body = document.body;
+
+// Empieza en modo oscuro
+body.classList.add("oscuro");
+
+modo.addEventListener("change", () => {
+
+    if (modo.checked) {
+        body.classList.remove("oscuro");
+        body.classList.add("claro");
+    } else {
+        body.classList.remove("claro");
+        body.classList.add("oscuro");
+    }
+
+});
+
 
 
 function mostrarnota() {
-    let mensaje = document.getElementById("mensaje3");
+    const mensaje = document.getElementById("mensaje2");
 
-    mensaje.innerHTML  = "tu mascota tiene sentimientos , cuidalo y tratalo bien ";
+    mensaje.textContent = "Hola, mi nombre es Ruby y mi color favorito es el rosa";
     mensaje.style.display = "block";
-    
-    setTimeout (() =>  {
-    mensaje.style.opacity ="1";
-    mensaje.style.transform= "translateY(0)";
+
+    // fuerza reinicio de animación
+    mensaje.style.opacity = "0";
+    mensaje.style.transform = "translateY(10px)";
+
+    setTimeout(() => {
+        mensaje.style.opacity = "1";
+        mensaje.style.transform = "translateY(0)";
     }, 50);
 }
+
+
+
+
+
+
+    
 
 
 

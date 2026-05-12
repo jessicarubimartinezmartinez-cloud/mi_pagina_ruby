@@ -16,10 +16,23 @@
       <a href="#pec">Proyecto PEC</a>
     </nav>
 
+
+
+<div class="theme-toggle">
+    <input type="checkbox" id="modo">
+    <label for="modo" class="boton-tema">
+        <span class="sol">☀️</span>
+        <span class="luna">🌙</span>
+    </label>
+</div>
+
+
+
+
     <section id="sobre-mi">
       <h2>sobre mi </h2>
       <p id="mensaje2" style="display: none;"></p>
-      <button onclick="mostrarnota()">nota sobre mi </button>
+      <button onclick="mostrarnota()">nota sobre mi</button>
       <br><br>
       <img
         src="img/ACT2_Tarjeta_Digital_Ruby_601.png"
@@ -38,7 +51,7 @@
     </section>
 
     <section id="pec">
-      <h2>Proyecto Escolar Comunitario</h2>
+      <h1>Proyecto Escolar Comunitario</h1>
       <p id="mensaje" style="display: none;"></p>
       <button onclick="mostrarMensaje()">mostrarMensaje</button>
       
@@ -86,11 +99,13 @@
 
 
 
- <section id="Preguntas frecuentes">
-      <h2>Preguntas frecuentes  </h2>
-      <p id="mensaje3" style="display: none;"></p>
-      <button onclick="mostrarnota()">nota sobre mi </button>
-      <br><br>
+<section id="preguntas-frecuentes">
+  <h1>Preguntas frecuentes</h1>
+
+  <p id="mensaje3" style="display:none;"></p>
+
+  <button onclick="mostrarPreguntas()">nota sobre mi</button>
+</section>
       
 
       <h2>Hola, estas son preguntas frecuentes.</h2>
@@ -133,46 +148,51 @@ function toggleInfo() {
 
 
 
-
-
-
-    </section>
-    <section id="miFormulario">
-      <h2>mi Formulario </h2>
-      <p id="mensaje4" style="display: none;"></p>
-      <button onclick="mostrarnota()">nota sobre mi </button>
-      <br><br>
-
-  <h2>Datos personales</h2>
-
-  <label>Nombre:</label>
-  <input type="text" name="nombre" required minlength="3">
-
-  <label>Email:</label>
-  <input type="email" name="email" required>
-
-  <hr>
-
-  <h2>Nueva sección: Dirección</h2>
-
-  <label>Calle:</label>
-  <input type="text" name="calle" required>
-
-  <label>Código Postal:</label>
-  <input type="text" name="cp" pattern="[0-9]{5}" placeholder="Ej: 12345" required>
-
-  <label>País:</label>
-  <select name="pais" required>
-    <option value="">Selecciona</option>
-    <option value="mx">México</option>
-    <option value="es">España</option>
-  </select>
-
-  <br><br>
-  <button type="submit">Enviar</button>
+  <br><br></section> 
     </section>
 
        <footer>
+ 
+
+ <section id="Formulario DE Registro">
+
+<h1>Formulario de Registro</h1>
+
+ <form action="enviar.php" method="post">
+
+ <!-- Nombre -->
+ <label for="nombre">Nombre:</label><br>
+ <input type="text" id="nombre" name="nombre" required><br><br>
+
+ <!-- Correo -->
+ <label for="correo">Correo electrónico:</label><br>
+ <input type="email" id="correo" name="correo" required><br><br>
+
+ <!-- Edad -->
+ <label for="edad">Edad:</label><br>
+ <input type="number" id="edad" name="edad" required><br><br>
+
+ <!-- País -->
+ <label for="pais">País:</label><br>
+ <select id="pais" name="pais" required>
+ <option value="">Selecciona una opción</option>
+ <option value="mx">México</option>
+ <option value="es">España</option>
+ <option value="ar">Argentina</option>
+ </select><br><br>
+
+ <!-- Botón -->
+ <button type="submit">Enviar</button>
+ 
+    
+
+
+ </section>
+ 
+
+
+
+
       <p>2026 - JESSICA RUBY</p>
     </footer>
    <script src="Script.js"></script>
